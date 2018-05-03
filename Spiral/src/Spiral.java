@@ -2,8 +2,8 @@ public class Spiral {
 
     public static void main(String[] args) {
         int[][] spiral = createSpiral(5);
-        System.out.println("-------------------------------");
-        printSpiral(spiral);
+//        System.out.println("-------------------------------");
+//        printSpiral(spiral);
 
     }
 
@@ -17,16 +17,16 @@ public class Spiral {
         while (start <= content) {
 
             for (int i = startSpiral; i <= endSpiral; i++) {
-                spiral[startSpiral][endSpiral] = start++;
+                spiral[startSpiral][i] = start++;
             }
-            for (int i = startSpiral; i <= endSpiral; i++) {
-                spiral[i][endSpiral] = start++;
+            for (int j = startSpiral; j <= endSpiral; j++) {
+                spiral[j][endSpiral] = start++;
             }
             for (int i = endSpiral - 1; i >= startSpiral; i--) {
                 spiral[endSpiral][i] = start++;
             }
-            for (int i = endSpiral - 1; i >= startSpiral; i--) {
-                spiral[i][startSpiral] = start++;
+            for (int j = endSpiral - 1; j >= startSpiral + 1; j--) {
+                spiral[j][startSpiral] = start++;
             }
 
             startSpiral++;
@@ -41,11 +41,11 @@ public class Spiral {
         return spiral;
     }
 
-    public static void printSpiral(int[][] array) {
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array.length; j++) {
-                System.out.print(array[i][j] + ", ");
-            }
-        }
-    }
+//    public static void printSpiral(int[][] array) {
+//        for (int i = 0; i < array.length; i++) {
+//            for (int j = 0; j < array.length; j++) {
+//                System.out.print(array[i][j] + ", ");
+//            }
+//        }
+//    }
 }
