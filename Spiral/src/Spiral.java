@@ -12,6 +12,32 @@ public class Spiral {
 
 //        int[][] spiral = createSpiral(3);
 //        printSpiral(spiral);
+        createMatrix(5);
+    }
+
+    public static int[][] createMatrix(int size){
+        int[][] matrix = new int[size][size];
+        int biggestNumber = size * size;
+        int length = size - 1;
+        int currentLength = length;
+        int startIndex = 0;
+        for (int i = biggestNumber; i > 1;) {
+            for (int j = startIndex; j < currentLength + startIndex; j++) {
+                matrix[startIndex][j] = i;
+                matrix[j][length - startIndex] = i - currentLength;
+                matrix[length - startIndex][length - j] = i - currentLength * 2;
+                matrix[length - j][startIndex] = i - currentLength * 3;
+                i--;
+            }
+            i = i - currentLength * 3;
+            currentLength -= 2;
+            startIndex++;
+        }
+        if (size % 2 != 0){
+            int center = size / 2;
+            matrix[center][center] = 1;
+        }
+        return matrix;
     }
 
     private static int[][] createSpiral(int size,int n) {

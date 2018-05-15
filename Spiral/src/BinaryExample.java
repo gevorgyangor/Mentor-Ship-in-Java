@@ -1,9 +1,22 @@
 public class BinaryExample {
     public static void main(String[] args) {
-        System.out.println(binary(1));
+        binary(-3);
     }
 
-    private static String binary(int n) {
+    private static void binary(int n) {
+        String str;
+        if (n <= 0) {
+            n *= -1;
+            str = binaryOperation(n);
+            str += 1;
+            System.out.println(str);
+        } else {
+            str = binaryOperation(n);
+            System.out.println(str);
+        }
+    }
+
+    private static String binaryOperation(int n) {
         String binaryNumber = "";
         while (n > 0) {
             binaryNumber = ((n % 2) == 0 ? "0" : "1") + binaryNumber;
@@ -11,5 +24,4 @@ public class BinaryExample {
         }
         return binaryNumber;
     }
-
 }
