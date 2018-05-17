@@ -1,7 +1,7 @@
 public class BinaryExample {
     public static void main(String[] args) {
-//        binary(-3);
-        printAsBinary(-2);
+        binary(-3);
+        printAsBinary(-3);
 
     }
 
@@ -30,9 +30,9 @@ public class BinaryExample {
     private static void printAsBinary(int a) {
         for (int i = 31; i >= 0; i--) {
             if ((a >> i & 1) == 0) {
-                System.out.println("0");
+                System.out.print("0");
             } else {
-                System.out.println("1");
+                System.out.print("1");
             }
         }
         System.out.println();
