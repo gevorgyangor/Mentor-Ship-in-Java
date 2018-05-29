@@ -1,7 +1,7 @@
 public class BinaryExample {
     public static void main(String[] args) {
-        binary(-3);
-        printAsBinary(-3);
+//        binary(-3);
+        printAsBinary(10);
 
     }
 
