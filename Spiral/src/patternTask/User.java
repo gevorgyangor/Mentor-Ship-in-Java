@@ -1,9 +1,7 @@
 package patternTask;
 
-import java.util.List;
-
 public class User {
-    private String namel;
+    private String name;
     private String surname;
 
     private User() {
@@ -11,37 +9,26 @@ public class User {
     }
 
     private User(String namel, String surname) {
-        this.namel = namel;
+        this.name = namel;
         this.surname = surname;
     }
 
-    public String getNamel() {
-        return namel;
-    }
-
-    public void setNamel(String namel) {
-        this.namel = namel;
+    public String getName() {
+        return name;
     }
 
     public String getSurname() {
         return surname;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-    public static class FactoryExample {
-        private static List<User> list = PatternTest.list;
-
-        public static User getInstanceFactory(User user) {
-            for (User user1 : list) {
-                if (user1.equals(user)) {
-                    return user1;
+    public static class InstanceFactory {
+        public static User instanceFactory(String name, String surname) {
+            for (User user : PatternTest.userList) {
+                if (user.name.equals(name) && user.surname.equals(surname)) {
+                    return user;
                 }
-                return new User();
             }
-            return null;
+            return new User(name, surname);
         }
     }
 }

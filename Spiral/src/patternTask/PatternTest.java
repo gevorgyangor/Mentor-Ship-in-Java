@@ -6,10 +6,17 @@ import java.util.List;
 
 public class PatternTest {
 
-    public static List<User> list = new ArrayList<>();
+    public static List<User> userList = new ArrayList<>();
 
     public static void main(String[] args) {
-        User user = User.FactoryExample.getInstanceFactory(new User("Gor","Gevorgyan"));
+        User userOne = User.InstanceFactory.instanceFactory("Gor", "Gevorgyan");
+        userList.add(userOne);
 
+        User userTwo = User.InstanceFactory.instanceFactory("Gor", "Gevorgyan");
+        userList.add(userTwo);
+
+        for (User user : userList) {
+            System.out.println(user.getName() + " " + user.getSurname());
+        }
     }
 }
