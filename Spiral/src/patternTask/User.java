@@ -41,6 +41,14 @@ public class User {
         return Objects.hash(name, surname);
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                '}';
+    }
+
     public static class InstanceFactory {
         static List<User> users = new ArrayList<>();
 

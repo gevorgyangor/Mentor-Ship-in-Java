@@ -1,5 +1,7 @@
 package patternTask;
 
+import java.util.List;
+
 public class PatternTest {
 
 
@@ -13,5 +15,21 @@ public class PatternTest {
             System.out.println(" != ");
         }
 
+        User user = getUserByNameAndSurname("Valod", "Gevorgyan");
+        if (user == null) {
+            System.out.println("user not found");
+        } else {
+            System.out.println("Name = " + user.getName() + " " + "Surname = " + user.getSurname());
+        }
+    }
+
+    private static User getUserByNameAndSurname(String name, String surname) {
+        List<User> userList = User.InstanceFactory.users;
+        for (User user : userList) {
+            if (user.getName().equals(name) && user.getSurname().equals(surname)) {
+                return user;
+            }
+        }
+        return null;
     }
 }
