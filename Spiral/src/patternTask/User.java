@@ -30,14 +30,14 @@ public final class User {
 
         User user = (User) o;
 
-        if (getName() != null ? !getName().equals(user.getName()) : user.getName() != null) return false;
-        return getSurname() != null ? getSurname().equals(user.getSurname()) : user.getSurname() == null;
+        if (!getName().equals(user.getName())) return false;
+        return getSurname().equals(user.getSurname());
     }
 
     @Override
     public int hashCode() {
-        int result = getName() != null ? getName().hashCode() : 0;
-        result = 31 * result + (getSurname() != null ? getSurname().hashCode() : 0);
+        int result = getName().hashCode();
+        result = 31 * result + getSurname().hashCode();
         return result;
     }
 

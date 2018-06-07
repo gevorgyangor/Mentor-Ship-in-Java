@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b88f3da8-ba9c-4a0b-916b-cd17c4b5635c" name="Default" comment="">
+    <list default="true" id="b88f3da8-ba9c-4a0b-916b-cd17c4b5635c" name="Default" comment="change Factory Pattern tasks. always is ok.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/patternTask/PatternTest.java" afterPath="$PROJECT_DIR$/src/patternTask/PatternTest.java" />
       <change beforePath="$PROJECT_DIR$/src/patternTask/User.java" afterPath="$PROJECT_DIR$/src/patternTask/User.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,21 +20,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PatternTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PatternTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/patternTask/PatternTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/patternTask/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-174">
-              <caret line="28" column="57" lean-forward="false" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+            <state relative-caret-position="-89">
+              <caret line="33" column="51" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,8 +84,8 @@
         <option value="$PROJECT_DIR$/src/patternTask/model/FactoryMethodExample.java" />
         <option value="$PROJECT_DIR$/src/patternTask/model/User.java" />
         <option value="$PROJECT_DIR$/src/patternTask/model/PatternTest.java" />
-        <option value="$PROJECT_DIR$/src/patternTask/PatternTest.java" />
         <option value="$PROJECT_DIR$/src/patternTask/User.java" />
+        <option value="$PROJECT_DIR$/src/patternTask/PatternTest.java" />
       </list>
     </option>
   </component>
@@ -402,7 +401,7 @@
       <workItem from="1528181707114" duration="7174000" />
       <workItem from="1528270645856" duration="3520000" />
       <workItem from="1528355746338" duration="848000" />
-      <workItem from="1528356826779" duration="2512000" />
+      <workItem from="1528356826779" duration="2671000" />
     </task>
     <task id="LOCAL-00001" summary="add print as binary method.">
       <created>1526558552486</created>
@@ -460,11 +459,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528358518835</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="change Factory Pattern tasks. always is ok.">
+      <created>1528360366230</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1528360366230</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47846000" />
+    <option name="totallyTimeSpent" value="48005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -820,29 +826,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/patternTask/PatternTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="976" column="24" lean-forward="false" selection-start-line="976" selection-start-column="24" selection-end-line="976" selection-end-column="24" />
+        <state relative-caret-position="159">
+          <caret line="975" column="19" lean-forward="false" selection-start-line="975" selection-start-column="19" selection-end-line="975" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/patternTask/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="28" column="57" lean-forward="false" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
+        <state relative-caret-position="-89">
+          <caret line="33" column="51" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/patternTask/PatternTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
