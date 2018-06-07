@@ -1,22 +1,17 @@
 package patternTask;
 
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class PatternTest {
 
-    public static List<User> userList = new ArrayList<>();
 
     public static void main(String[] args) {
-        User userOne = User.InstanceFactory.instanceFactory("Gor", "Gevorgyan");
-        userList.add(userOne);
+        User userOne = User.InstanceFactory.getUser("Gor", "Gevorgyan");
+        User userTwo = User.InstanceFactory.getUser("Gor", "Gevorgyan");
 
-        User userTwo = User.InstanceFactory.instanceFactory("Gor", "Gevorgyan");
-        userList.add(userTwo);
-
-        for (User user : userList) {
-            System.out.println(user.getName() + " " + user.getSurname());
+        if (userOne == userTwo) {
+            System.out.println(" == ");
+        } else {
+            System.out.println(" != ");
         }
+
     }
 }
