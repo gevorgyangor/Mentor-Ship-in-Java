@@ -11,7 +11,7 @@ public class DBConnectionProvider {
     private Connection connection;
 
     private final String DRIVER_NAME = "com.mysql.jdbc.Driver";
-    private final String DB_URL = "jdbc:mysql://localhost:3306/task_project";
+    private final String DB_URL = "jdbc:mysql://localhost:3306/test_project";
     private final String USERNAME = "root";
     private final String PASSWORD = "root";
 
